@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="book-svgrepo-com.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up or Log In | Book'sLibrary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        font-family: sans-serif;
+    }
+
+    body {
+        font-family: 'Acme', sans-serif;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        height: 66px;
+        /* position: sticky; */
+        top: 0;
+        padding: 4px;
+        background-color: rgba(234, 236, 236, 0.699);
+        justify-content: center;
+        z-index: 8;
+    }
+
+    h1 a {
+        font-family: 'Lobster', cursive;
+        font-size: 32px;
+        color: #573ba3;
+    }
+
+    .form {
+        width: 400px;
+        height: 660px;
+        position: relative;
+        margin: 39px auto;
+        background-color: rgb(255, 255, 255);
+        padding: 5px;
+        border: 2px solid rgb(234, 236, 235);
+        overflow: hidden;
+        align-items: center;
+        z-index: 1;
+    }
+
+    #user{
+        color: rgb(85, 79, 79);
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+
+    .logbutton {
+        width: 255px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px rgba(78, 37, 143, 0.205);
+        border-radius: 30px;
+    }
+
+    .toggle {
+        /* color: white; */
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+    }
+
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 119px;
+        height: 100%;
+        /* color: white; */
+        background: linear-gradient(to right, rgb(180, 165, 236), rgb(82, 41, 148));
+        border-radius: 30px;
+        transition: .5s;
+    }
+
+    /* .continue {
+        color: rgb(85, 79, 79);
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    } */
+
+    /* #social_icons {
+        margin: 30px auto;
+        text-align: center;
+        /* display: flex; */
+    /* }
+
+    #social_icons li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 12px;
+    }
+
+    #social_icons li a {
+        color: #573ba3;
+    } 
+
+    a {
+        text-decoration: none;
+    }*/
+
+    .input {
+        top: 200px;
+        position: absolute;
+        width: 280px;
+        transition: 0.5s;
+    }
+
+    .pad {
+        padding-top: 2px;
+        padding-right: 12x;
+    }
+
+    .space {
+        padding-top: 2px;
+        padding-left: 18px;
+    }
+
+    .inputfield {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+    }
+
+    .submitbtn {
+        width: 85%;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        color: white;
+        background: linear-gradient(to right, rgb(180, 165, 236), rgb(67, 29, 128));
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .check {
+        margin: 30px 10px 30px 0;
+    }
+
+    span.huy {
+        color: #777;
+        font-size: 12px;
+        bottom: 63px;
+        position: absolute;
+    }
+
+    #Login {
+        left: 70px;
+    }
+
+    #Signup {
+        left: 450px;
+    }
+
+    span.huy a {
+        text-decoration: none;
+        color: rgb(146, 43, 43);
+    }
+
+    .already{
+        font-size: 15px;
+        color: rgb(24, 21, 21);
+        text-align: center;
+        position: relative;
+        top: 375px;
+    }
+
+    .already a {
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 1265px) {
+        .form {
+            width: 350px;
+            height: 574px;
+            position: relative;
+            margin: 8% auto;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border: 2px solid rgb(111, 129, 115);
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <!-- <a href="index.html" class="logo"><img src="Icons/bazaart_logo.jpg" alt="Books Library Logo"></a> -->
+        <h1 class="header"><a href="index.html">Art Bubble</a></h1>
+    </nav>
+    <!-- <img class="landimage" src="Images/6607.jpg" alt="backgroundimage"> -->
+    <!-- <div class="container"> -->
+    <div class="form">
+        <div id="user">Create Account</div>
+
+        <div class="logbutton">
+            <div id="btn"></div>
+            <button id="press" class="toggle" onclick="Login()">For Artist's</button>
+            <button id="press" class="toggle" onclick="Signup()">For Buyer's</button>
+        </div>
+
+        <!-- <span class="continue">Continue With</span>
+
+        <div id="social_icons">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+            </ul>
+        </div> -->
+        <!-- Login form -->
+        <form action="#" id="Login" class="input pad">
+            <input type="text" class="inputfield" placeholder="Shop Name" required>
+            <input type="email" class="inputfield" placeholder="Email Id" required>
+            <input type="tel" class="inputfield"
+                placeholder="Phone Number" for="phone" required>
+            <input type="password" class="inputfield" placeholder="Password" required>
+            <input type="password" class="inputfield" placeholder="Confirm Password" required>
+            <input type="checkbox" class="check" id="tick1" required><span class="huy"><label for="tick1">I agree to all the <a href="#" target="_blank">Terms & Conditions</a> </label></span>
+            <button type="submit" class="submitbtn">Create</button>
+        </form>
+        <!-- Signup form -->
+        <form action="#" id="Signup" class="input space">
+            <input type="text" class="inputfield" placeholder="User Name" required>
+            <input type="email" class="inputfield" placeholder="Email Id" required>
+            <!-- <span class="1"><label for="phone">Phone No.</label></span> --><input type="tel" class="inputfield"
+                placeholder="Phone Number" for="phone" required>
+            <input type="password" class="inputfield" placeholder="Password" required>
+            <input type="password" class="inputfield" placeholder="Confirm Password" required>
+            <input type="checkbox" class="check" id="tick1" required><span class="huy"><label for="tick1">I agree to all
+                    the <a href="#" target="_blank">Terms & Conditions</a> </label></span>
+            <button type="submit" class="submitbtn">Create</button>
+        </form>
+
+        <div class="already">Already having an account ? <a href="Loginform.html">Login</a></div>
+
+    </div>
+
+    <!-- </div> -->
+
+    <!-- JavaScript started from here. -->
+    <script>
+
+
+        var x = document.getElementById("Login");
+        var y = document.getElementById("Signup");
+        var z = document.getElementById("btn");
+        // document.getElementById('change').onclick = changeColor; 
+
+        function Signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "135px";
+        }
+
+        function Login() {
+            x.style.left = "70px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+
+
+    </script>
+</body>
+
+</html>

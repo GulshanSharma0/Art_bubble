@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Book'sLibrary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .headerA a {
+        color: #573ba3;
+        margin-left: 190px;
+        font-family: 'Lobster', cursive;
+        font-size: 27px;
+    }
+
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        height: 66px;
+        position: absolute;
+        top: 0;
+        padding: 42px 0px;
+        /* background-color:rgba(234, 236, 236, 0.699); */
+        /* background-color:rgb(123, 41, 230); */
+        background-color: rgba(201, 211, 211, 0.699);
+        z-index: 10;
+    }
+
+    /* img {
+        width: 45px;
+        border-radius: 50%;
+    }
+
+    .logo {
+        margin: 0px 10px;
+
+    } */
+
+    #navbar li {
+        font-family: 'Merriweather', serif;
+        display: inline;
+        list-style: none;
+        text-align: right;
+        margin: 0px 12px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #navbar li a {
+        color: #573ba3;
+        ;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .searchbar {
+        /* float: left; */
+        border-radius: 15px;
+        margin: 0px 40px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+
+
+    input {
+        height: 38px;
+        width: 400px;
+        /* border-radius: 50%; */
+        /* border: 2px solid rgb(66, 16, 88); */
+        border: none;
+        padding: 0px 20px;
+        float: left;
+        outline: none;
+        border-top-left-radius: 48px;
+        border-bottom-left-radius: 48px;
+        border-top-right-radius: 48px;
+        border-bottom-right-radius: 48px;
+        z-index: -1;
+    }
+
+    .btn {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(65, 61, 66);
+        border: 1px solid rgb(65, 61, 66);
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+        border-top-right-radius: 40%;
+        border-bottom-right-radius: 40%;
+        border-radius: 50%;
+        float: left;
+        outline: none;
+        position: relative;
+        top: 4px;
+        right: 34px;
+        z-index: 2;
+    }
+
+    .btn i {
+        color: white;
+        /* bottom: 5px; */
+        /* padding: 3px 1px; */
+    }
+
+    .about {
+        /* padding: 300px; */
+        position: relative;
+        /* left: -81px; */
+        /* top: 50%; */
+        width: 1200px;
+        height: 600px;
+        /* z-index: 1; */
+        position: relative;
+        top: 150px;
+        left: 100px;
+        background: rgba(235, 231, 231, 0.863);
+    }
+
+    .content {
+        padding: 50px;
+    }
+
+    .content>h1,
+    .content>h3,
+    .content>p {
+        font-family: 'Barlow', sans-serif;
+        text-align: center; 
+        padding: 15px;
+        position: relative;
+        top: 150px;
+        left: 82px;
+        
+
+    }
+
+    
+    .content img{
+        position: relative;
+        width: 100%;
+        bottom: 300px;
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <!-- <a href="index.html" class="logo"><img src="Icons/bazaart_logo.jpg" alt="Books Library Logo"></a> -->
+        <h1 class="headerA"><a href="index.html">Art Bubble</a></h1>
+
+        <div class="searchbar">
+            <form action="#">
+                <input type="text" name="search" id="" placeholder="Search Designs and Products">
+                <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="listitems">
+            <ul>
+                <li><a href="#">Categories</a> </li>
+                <li><a href="#">Browse Creators</a> </li>
+                <li><a href="#"><abbr title="WishList"><i class="fa fa-heart fa-lg" aria-hidden="true"></i>></abbr></a>
+                </li>
+                <!-- <li><a href="#">Collections</a> </li> -->
+                <li><a href="#"><abbr title="Bag"><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></abbr></a>
+                </li>
+                <li><a href="Signup.html"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class="about">
+            <div class="content">
+                
+                <h1>Bringing more Creativity to the world.</h1><h1>Welcome to Art Bubble</h1>
+                <h3>
+                    An Artist marketplace dedicated to giving independent artists a meaningful way to sell their
+                    creations.
+                </h3>
+                <h3>We connect thousands of Graphic designers and artists all over the world to the people who admire art in their daily lives.
+                    Art Bubble helps every designer get the right value of the work they do. Alongside, we encourage every small designer to create art that can inspire, motivate, make lively our lives through the merchandise that are available to every person who sees art as an integral part of life.
+                </h3>
+                <img src="5g.jpg" alt="Man with colourful phone">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
